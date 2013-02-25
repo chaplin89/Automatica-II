@@ -5,9 +5,9 @@
 \textclass scrbook
 \use_default_options true
 \maintain_unincluded_children false
-\language english
+\language italian
 \language_package default
-\inputencoding auto
+\inputencoding utf8
 \fontencoding global
 \font_roman default
 \font_sans default
@@ -20,7 +20,7 @@
 \font_tt_scale 100
 
 \graphics default
-\default_output_format default
+\default_output_format pdf2
 \output_sync 0
 \bibtex_command default
 \index_command default
@@ -30,8 +30,8 @@
 \pdf_title "Soluzioni tracce di Automatica II, Prof. Maione-Lino"
 \pdf_author "Marco Q."
 \pdf_bookmarks true
-\pdf_bookmarksnumbered false
-\pdf_bookmarksopen true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen false
 \pdf_bookmarksopenlevel 2
 \pdf_breaklinks false
 \pdf_pdfborder true
@@ -39,7 +39,7 @@
 \pdf_backref false
 \pdf_pdfusetitle true
 \papersize default
-\use_geometry false
+\use_geometry true
 \use_amsmath 1
 \use_esint 1
 \use_mhchem 1
@@ -50,14 +50,16 @@
 \paperorientation portrait
 \suppress_date false
 \use_refstyle 1
+\branch Blah
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 2cm
-\topmargin 2cm
-\rightmargin 2cm
-\bottommargin 2cm
+\bottommargin 4cm
 \secnumdepth 3
 \tocdepth 2
 \paragraph_separation indent
@@ -68,9 +70,9 @@
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
-\html_math_output 0
+\html_math_output 2
 \html_css_as_file 0
-\html_be_strict false
+\html_be_strict true
 \end_header
 
 \begin_body
@@ -206,10 +208,14 @@ Intersezione con l'asse dei numeri reali
 \end_inset
 
 
-\begin_inset Formula $\Re\{G_{p}(j\omega)G_{c}(j\omega)\}=0\Leftrightarrow\frac{{}}{}$
+\begin_inset Formula $\Im\{G_{p}(j\omega)G_{c}(j\omega)\}=0\Leftrightarrow\frac{{}}{}$
 \end_inset
 
+Non esistono valori finiti di 
+\begin_inset Formula $\omega$
+\end_inset
 
+ che soddisfino l'equazione
 \begin_inset Newline newline
 \end_inset
 
@@ -234,7 +240,7 @@ Intersezione con l'asse dei numeri reali
 \end_inset
 
 
-\begin_inset Formula $\Im\{\rg[1]\}=$
+\begin_inset Formula $\Re\{\rg[1]\}=$
 \end_inset
 
 
@@ -309,7 +315,7 @@ LatexCommand tableofcontents
 Appello del 18.07.03
 \end_layout
 
-\begin_layout Section*
+\begin_layout Subsection*
 Quesito A
 \end_layout
 
@@ -455,10 +461,17 @@ Il margine di fase
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $|\rg|=1\rightarrow4=\sqrt{(1+\omega^{2})^{3}}\rightarrow\omega=\sqrt{16^{\nicefrac{1}{3}}-1}\rightarrow\omega_{c}\backsimeq1.23$
+\begin_inset Formula $|\rg|=1\rightarrow4=\sqrt{(1+\omega^{2})^{3}}$
 \end_inset
 
- (scarto soluzioni negative/complesse coniugate)
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega=\sqrt{16^{\nicefrac{1}{3}}-1}\rightarrow\omega_{c}\backsimeq1.23$
+\end_inset
+
+ (scarto soluzioni negative/complesse coniugate).
 \end_layout
 
 \begin_layout Standard
@@ -548,9 +561,9 @@ Con
 \end_inset
 
 
-\end_layout
+\begin_inset Newline newline
+\end_inset
 
-\begin_layout Standard
 
 \family roman
 \series medium
@@ -563,30 +576,16 @@ Con
 \uwave off
 \noun off
 \color none
-\begin_inset Formula $M\phi(0.2,2)=\frac{{\pi}}{2}-0.5\cdot2=0.57$
+
+\begin_inset Formula $M\phi(0.5,2)=\frac{{\pi}}{2}-0.5\cdot2=0.57$
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\begin_inset Formula $M\phi(0.2,2)=\frac{{\pi}}{2}-2=-0.42$
+\begin_inset Newline newline
 \end_inset
 
 
-\begin_inset Newpage newpage
+\begin_inset Formula $M\phi(1,2)=\frac{{\pi}}{2}-2=-0.42$
 \end_inset
 
 
@@ -1023,7 +1022,7 @@ Si determinino i valori k (se ve ne sono) per i quali il sistema è stabile.
 
 \begin_layout Standard
 Il sistema è stabile per 
-\begin_inset Formula $k>\nicefrac{1}{2}$
+\begin_inset Formula $k<\nicefrac{1}{2}$
 \end_inset
 
 .
@@ -1225,14 +1224,7 @@ Si discuta la stabilità
 \end_layout
 
 \begin_layout Standard
-Il sistema non è stabile.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
+Il sistema non è stabile ed ha due poli a parte reale positiva.
 \end_layout
 
 \begin_layout Chapter
@@ -1448,13 +1440,14 @@ Per tali valori di
 \begin_inset Formula $k$
 \end_inset
 
-, il diagramma di Nyquist compie sempre un giro completo in senso antiorario
- attorno al punto critico 
-\begin_inset Formula $s=-1+j0$
+, il diagramma di Nyquist non circonda il punto critico 
+\begin_inset Formula $-1+j0$
 \end_inset
 
 .
- Per tali valori il sistema è sempre stabile.
+ Essendo il sistema in anello aperto instabile con un polo a parte reale
+ positiva, il sistema in anello chiuso è instabile con un polo a parte reale
+ positiva.
 \end_layout
 
 \begin_layout Subsection*
@@ -1783,7 +1776,7 @@ In definitiva l'equazione sarà:
 \end_layout
 
 \begin_layout Chapter
-Appello del 17.04.04
+Appello del 17.04.04[G]
 \end_layout
 
 \begin_layout Subsection*
@@ -2060,6 +2053,338 @@ Posto
 
 \begin_layout Standard
 \begin_inset Formula $M\phi=-T+\frac{{\pi}}{2}<0\Leftrightarrow T>\frac{{\pi}}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Appello del 15.07.04
+\end_layout
+
+\begin_layout Subsection*
+Quesito A
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Si consideri un sistema in retroazione unitaria con 
+\begin_inset Formula $\pl=\left.\frac{5}{(1+5s)^{3}}e^{-2s}\right|_{s=\jo}\ct=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\emph on
+Si determini il margine di fase
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $|\rg|=1\Leftrightarrow5=(1+25\omega^{2})^{\nicefrac{3}{2}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\omega=\omega_{c}=\sqrt{\frac{5^{\nicefrac{2}{3}}-1}{25}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\angle\rg[c]=-2\omega_{c}-3\arctan(5\omega_{c})=-3.4$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $M\phi=-0.25$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Quesito B
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Si consideri un sistema in retroazione unitaria con 
+\begin_inset Formula $\ct=k$
+\end_inset
+
+ e 
+\begin_inset Formula $\pl=\left.\frac{{1}}{5s-1}\right|_{s=\jo}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\emph on
+Si tracci il diagramma polare di Nyquist (considero nei calcoli 
+\begin_inset Formula $\omega>0$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\begin_inset Formula $\rg=\left.\frac{{k}}{5\jo-1}\right|_{s=j\omega}=-\frac{{k}}{(1-5j\omega)}=-\frac{{k}}{(1+25\omega^{2})}-jk\frac{{5\omega}}{(1+25\omega^{2})}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\family roman
+\noun on
+Comportamento asintotico
+\begin_inset VSpace defskip
+\end_inset
+
+
+\noun default
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\lim_{\omega\rightarrow0}\angle G_{p}(j\omega)G_{c}(j\omega) & = & \varphi_{0}-\mu\frac{{\pi}}{2}=\left\{ \begin{array}{cc}
+k>0 & -\pi\\
+k<0 & 0
+\end{array}\right.\\
+\lim_{\omega\rightarrow+\infty}\angle G_{p}(j\omega)G_{c}(j\omega) & = & (m-n)\frac{{\pi}}{2}-(m_{2}-n_{2})\pi+\varphi_{0}=\left\{ \begin{array}{cc}
+k>0 & -\frac{{\pi}}{2}\\
+k<0 & -\frac{3}{2}\pi
+\end{array}\right.\\
+\lim_{\omega\rightarrow0}|G_{p}(j\omega)G_{c}(j\omega)| & = & +k=\left\{ \begin{array}{cc}
+\lim_{\omega\rightarrow0^{+}}\Re\{G_{p}(j\omega)G_{c}(j\omega)\} & =-k^{+}\\
+\lim_{\omega\rightarrow0^{+}}\Im\{G_{p}(j\omega)G_{c}(j\omega)\} & =0^{-}
+\end{array}\right.\\
+\lim_{\omega\rightarrow+\infty}|G_{p}(j\omega)G_{c}(j\omega)| & = & 0\\
+\Delta\arg(G_{p}(j\omega)G_{c}(j\omega)) & = & \frac{{\pi}}{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\family roman
+\noun on
+Intersezione con gli assi
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Intersezione con l'asse dei numeri reali 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\Re\{G_{p}(j\omega)G_{c}(j\omega)\}=0\Leftrightarrow$
+\end_inset
+
+Non esistono valori finiti di 
+\begin_inset Formula $\omega$
+\end_inset
+
+ che soddisfino l'equazione
+\end_layout
+
+\begin_layout Enumerate
+Intersezione con l'asse dei numeri immaginari
+\begin_inset Newline newline
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\Re\{G_{p}(j\omega)G_{c}(j\omega)\}=0\Leftrightarrow$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+Non esistono valori finiti di 
+\begin_inset Formula $\omega$
+\end_inset
+
+ che soddisfino l'equazione
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\noun on
+Disegno (Per 
+\begin_inset Formula $k=1$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Immagini/15.07.04_A.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\emph on
+Si studi la stabilità del sistema in anello chiuso al variare di 
+\begin_inset Formula $k$
+\end_inset
+
+, per 
+\begin_inset Formula $k>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $k>1$
+\end_inset
+
+, il sistema è stabile con un polo a parte reale negativa
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $k<1$
+\end_inset
+
+, il sistema è instabile con un polo a parte reale positiva
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $k=1$
+\end_inset
+
+, il sistema è marginalmente stabile con un polo nell'origine.
+\end_layout
+
+\begin_layout Subsection*
+Quesito C
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Si consideri un sistema in retroazione unitaria con 
+\begin_inset Formula $\pl=\frac{{5e^{-0.02\jo}}}{(1+0.1s)(1+0.5s)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\emph on
+Si progetti il controllore 
+\begin_inset Formula $\ct=\frac{{K_{c}(1+T_{n}s)}}{T_{n}s}$
+\end_inset
+
+ con il metodo del 
+\begin_inset Quotes eld
+\end_inset
+
+modulo ottimo
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Considero il sistema approssimato:
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+\begin_inset Formula $\pl=\frac{{5e^{-0.02\jo}}}{(1+0.1s)(1+0.5s)}\backsimeq\frac{{5}}{(1+0.1s)(1+0.5s)(1+0.02s)}\backsimeq\frac{{5}}{(1+0.3s)(1+0.02s)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Scelgo la costante 
+\begin_inset Formula $T_{n}$
+\end_inset
+
+in modo da eliminare il polo sito in 
+\begin_inset Formula $-0.02$
+\end_inset
+
+: 
+\begin_inset Formula $T_{n}=0.02$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Di conseguenza 
+\begin_inset Formula $\frac{{T_{n}}}{K_{c}}=2\cdot0.3\cdot5=K_{c}\Leftrightarrow K_{c}=0.0067$
 \end_inset
 
 
@@ -2505,8 +2830,6 @@ Si tari il regolatore con la regola di Ziegler-Nichols
 \end_layout
 
 \begin_layout Standard
-His face was so melted from the weed effect that we had a close casket funeral﻿
- 
 \begin_inset Formula 
 \begin{eqnarray*}
 K & = & 0.6\cdot K_{p}=0.48\\
@@ -2528,7 +2851,1144 @@ Il controllore avrà quindi la seguente f.d.t.:
 \end_inset
 
 
-\begin_inset Newpage newpage
+\end_layout
+
+\begin_layout Chapter
+Appello del 20.09.05
+\end_layout
+
+\begin_layout Subsection*
+Quesito A
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Si considerino le due funzioni di risposta armonica: 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $G_{1}(\jo)=\left.\frac{{10}}{s^{2}(s+2)}\right|_{s=\jo}$
+\end_inset
+
+,
+\begin_inset Formula $G_{2}(\jo)=\left.10\frac{{s+1}}{s{}^{2}(s+2)}\right|_{s=\jo}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\emph on
+Si traccino i diagrammi di Nyquist
+\end_layout
+
+\begin_layout Standard
+Diagramma di 
+\begin_inset Formula $G_{1}(\jo)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\begin_inset Formula $\rg=\left.\frac{{10}}{s^{2}(s+2)}\right|_{s=j\omega}=\frac{{5}}{(j\omega)^{2}(1+0.5j\omega)}=-\frac{{5}}{\omega^{2}(1+0.25\omega^{2})}+j\frac{{1.25}}{\omega(1+\omega^{2})}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\family roman
+\noun on
+Comportamento asintotico
+\begin_inset VSpace defskip
+\end_inset
+
+
+\noun default
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\lim_{\omega\rightarrow0}\angle G_{p}(j\omega)G_{c}(j\omega) & = & \varphi_{0}-\mu\frac{{\pi}}{2}=-\pi\\
+\lim_{\omega\rightarrow+\infty}\angle G_{p}(j\omega)G_{c}(j\omega) & = & (m-n)\frac{{\pi}}{2}-(m_{2}-n_{2})\pi+\varphi_{0}=-\frac{{3}}{2}\pi\\
+\lim_{\omega\rightarrow0}|G_{p}(j\omega)G_{c}(j\omega)| & = & +\infty=\left\{ \begin{array}{cc}
+\lim_{\omega\rightarrow0^{+}}\Re\{G_{p}(j\omega)G_{c}(j\omega)\} & =-\infty\\
+\lim_{\omega\rightarrow0^{+}}\Im\{G_{p}(j\omega)G_{c}(j\omega)\} & =+\infty
+\end{array}\right.\\
+\lim_{\omega\rightarrow+\infty}|G_{p}(j\omega)G_{c}(j\omega)| & = & 0\\
+\Delta\arg(G_{p}(j\omega)G_{c}(j\omega)) & = & -\frac{{\pi}}{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\family roman
+\noun on
+Intersezione con gli assi
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Intersezione con l'asse dei numeri reali 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\Re\{G_{p}(j\omega)G_{c}(j\omega)\}=0\Leftrightarrow$
+\end_inset
+
+Non esistono valori finiti di 
+\begin_inset Formula $\omega$
+\end_inset
+
+ che soddisfino l'equazione
+\end_layout
+
+\begin_layout Enumerate
+Intersezione con l'asse dei numeri immaginari
+\begin_inset Newline newline
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\Re\{G_{p}(j\omega)G_{c}(j\omega)\}=0\Leftrightarrow$
+\end_inset
+
+Non esistono valori finiti di 
+\begin_inset Formula $\omega$
+\end_inset
+
+ che soddisfino l'equazione
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\noun on
+Disegno (Per 
+\begin_inset Formula $k=1$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Immagini/20.09.05_A1.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Diagramma di 
+\begin_inset Formula $G_{2}(\jo)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\begin_inset Formula $\rg=\left.10\frac{{s+1}}{s{}^{2}(s+2)}\right|_{s=j\omega}=5\frac{{1+\jo}}{(\jo)^{2}(1+0.5\jo)}=-5\frac{{1+0.5\omega^{2}}}{\omega^{2}(1+0.25\omega^{2})}-j\frac{{2.5}}{\omega(1+0.25\omega^{2})}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\family roman
+\noun on
+Comportamento asintotico
+\begin_inset VSpace defskip
+\end_inset
+
+
+\noun default
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\lim_{\omega\rightarrow0}\angle G_{p}(j\omega)G_{c}(j\omega) & = & \varphi_{0}-\mu\frac{{\pi}}{2}=-\pi\\
+\lim_{\omega\rightarrow+\infty}\angle G_{p}(j\omega)G_{c}(j\omega) & = & (m-n)\frac{{\pi}}{2}-(m_{2}-n_{2})\pi+\varphi_{0}=-\pi\\
+\lim_{\omega\rightarrow0}|G_{p}(j\omega)G_{c}(j\omega)| & = & +\infty=\left\{ \begin{array}{cc}
+\lim_{\omega\rightarrow0^{+}}\Re\{G_{p}(j\omega)G_{c}(j\omega)\} & =-\infty\\
+\lim_{\omega\rightarrow0^{+}}\Im\{G_{p}(j\omega)G_{c}(j\omega)\} & =-\infty
+\end{array}\right.\\
+\lim_{\omega\rightarrow+\infty}|G_{p}(j\omega)G_{c}(j\omega)| & = & 0\\
+\Delta\arg(G_{p}(j\omega)G_{c}(j\omega)) & = & 0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\family roman
+\noun on
+Intersezione con gli assi
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Intersezione con l'asse dei numeri reali 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\Re\{G_{p}(j\omega)G_{c}(j\omega)\}=0\Leftrightarrow$
+\end_inset
+
+Non esistono valori finiti di 
+\begin_inset Formula $\omega$
+\end_inset
+
+ che soddisfino l'equazione
+\end_layout
+
+\begin_layout Enumerate
+Intersezione con l'asse dei numeri immaginari
+\begin_inset Newline newline
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\Re\{G_{p}(j\omega)G_{c}(j\omega)\}=0\Leftrightarrow$
+\end_inset
+
+Non esistono valori finiti di 
+\begin_inset Formula $\omega$
+\end_inset
+
+ che soddisfino l'equazione
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\noun on
+Disegno (Per 
+\begin_inset Formula $k=1$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Immagini/20.09.05_A2.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\emph on
+Si studi la stabilità di entrambi i sistemi, in anello chiuso, con il criterio
+ di Nyquist
+\end_layout
+
+\begin_layout Standard
+Nel primo caso il diagramma circonda due volte in senso orario il punto
+ critico 
+\begin_inset Formula $-1+j0$
+\end_inset
+
+.
+ Non avendo il sistema in anello aperto poli a parte reale positiva, il
+ sistema in anello chiuso risulta instabile con due poli a parte reale positiva.
+\end_layout
+
+\begin_layout Standard
+Nel secondo caso il diagramma non circonda il punto critico 
+\begin_inset Formula $-1+j0$
+\end_inset
+
+, pertanto il sistema in anello chiuso è asintoticamente stabile.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\emph on
+Si verifichi il risultato con il luogo delle radici
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Immagini/20.09.05_A4.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Immagini/20.09.05_A3.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Quesito B
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Si consideri un sistema in retroazione unitaria con 
+\begin_inset Formula $\rg=\left.\frac{{e^{-t_{0}s}}}{s(s+1)}\right|_{s=\jo}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\emph on
+Si determini il più grande valore di 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ per il quale il sistema è ancora stabile.
+\end_layout
+
+\begin_layout Standard
+Calcolo il margine di fase:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $|\rg|=1\Leftrightarrow1=\omega^{2}(\omega^{2}+1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $z^{2}+z-1=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega_{c}=\sqrt{\frac{{-1+\sqrt{5}}}{2}}=0.79$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\angle\rg[c]=-to\omega_{c}-\frac{{\pi}}{2}-\arctan(\omega_{c})=-t_{0}\cdot0.79-2.24$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M\phi=-t_{0}\cdot0.79+0.90>0\Leftrightarrow t_{0}<\frac{{0.90}}{0.79}=1.15$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Per 
+\begin_inset Formula $t_{0}=1.15$
+\end_inset
+
+ il sistema è marginalmente stabile, per valori superiori il sistema è instabile.
+\end_layout
+
+\begin_layout Subsection*
+Quesito C
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Si consideri un sistema in retroazione unitaria con 
+\begin_inset Formula $\pl=\left.\frac{{1}}{(s+0.25)(s+1)}\right|_{s=\jo}$
+\end_inset
+
+.Sia 
+\begin_inset Formula $G_{c1}(s)=k_{p}+\frac{{k_{i}}}{s}$
+\end_inset
+
+ e 
+\begin_inset Formula $G_{c2}(s)=k_{p}+k_{d}s$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Si determini, tra i due, il controllore che permette di ottenere un errore
+ di velocità finito.
+\end_layout
+
+\begin_layout Standard
+Affinché il sistema in anello chiuso abbia un errore di velocità finito,
+ il sistema in anello aperto dev'essere di tipo 1.
+ Il controllore in questione è pertanto 
+\begin_inset Formula $G_{c1}(s)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+Con il controllore scelto si stabiliscano le condizioni da imporre sui parametri
+ (positivi) affinché il sistema in retrazione sia sempre stabile quali che
+ siano i valori da essi assunti.
+\end_layout
+
+\begin_layout Standard
+L'equazione caratteristica del sistema in anello chiuso è: 
+\begin_inset Formula $4s^{3}+5s^{2}+(1+4k_{p})s+4k_{i}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+La studio con il criterio di Routh:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1+4k_{p}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $5$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4k_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $5+20k_{p}-4k_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4k_{i}(5+20k_{p}-4k_{i})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Affinché la prima riga non presenti variazioni di segno, dev'essere: 
+\begin_inset Formula $k_{p}>\frac{{4k_{i}-5}}{20}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+Si determinino i valori dei parametri in modo che la dinamica del sistema
+ in anello chiuso sia del secondo ordine e che il tempo di assestamento
+ al 2% non superi gli 8 secondi.
+\end_layout
+
+\begin_layout Standard
+Affinché il sistema in anello chiuso abbia una dinamica del secondo ordine,
+ scelgo di eliminare il polo in 
+\begin_inset Formula $-0.25$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Impongo 
+\begin_inset Formula $\frac{{k_{i}}}{k_{p}}=0.25$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Affinché il tempo di assestamento al 2% non superi gli 8 secondi dev'essere
+ verificata la condizione: 
+\begin_inset Formula $\delta\omega_{n}<\frac{{4}}{T_{a}}=0.5$
+\end_inset
+
+.
+ Scelgo 
+\begin_inset Formula $\delta\omega_{n}=0.5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+L'equazione caratteristica sarà pertanto 
+\begin_inset Formula $s^{2}+s+\omega_{n}^{2}=s^{2}+s+k_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Impongo 
+\begin_inset Formula $k_{i}=1$
+\end_inset
+
+, di conseguenza sarà: 
+\begin_inset Formula $k_{p}=4k_{i}=4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Il controllore sarà, in definitiva: 
+\begin_inset Formula $\ct=4+\frac{{1}}{s}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Il guadagno di anello sarà 
+\begin_inset Formula $\rg=\frac{1}{s(s+1)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Chapter
+Appello del 15.02.06
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Si consideri un sistema in retroazione unitaria con 
+\begin_inset Formula $\rg=\left.\frac{{k(s+1)}}{s^{2}}\right|_{s=\jo}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Quesito A
+\end_layout
+
+\begin_layout Subsubsection*
+
+\emph on
+Posto 
+\begin_inset Formula $k=1$
+\end_inset
+
+, si tracci il diagramma polare di Nyquist (considero nei calcoli 
+\begin_inset Formula $\omega>0$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\begin_inset Formula $\rg=\left.\frac{{k(s+1)}}{s^{2}}\right|_{s=\jo}=\frac{{k(\jo+1)}}{(\jo)^{2}}=-\frac{{k}}{\omega^{2}}-j\frac{{k}}{\omega}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\family roman
+\noun on
+Comportamento asintotico
+\begin_inset VSpace defskip
+\end_inset
+
+
+\noun default
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\lim_{\omega\rightarrow0}\angle G_{p}(j\omega)G_{c}(j\omega) & = & \varphi_{0}-\mu\frac{{\pi}}{2}=\left\{ \begin{array}{cc}
+k>0 & -\pi\\
+k<0 & -2\pi
+\end{array}\right.\\
+\lim_{\omega\rightarrow+\infty}\angle G_{p}(j\omega)G_{c}(j\omega) & = & (m-n)\frac{{\pi}}{2}-(m_{2}-n_{2})\pi+\varphi_{0}=\left\{ \begin{array}{cc}
+k>0 & -\frac{{\pi}}{2}\\
+k<0 & -\frac{{3}}{2}\pi
+\end{array}\right.\\
+\lim_{\omega\rightarrow0}|G_{p}(j\omega)G_{c}(j\omega)| & = & +\infty=\left\{ \begin{array}{cc}
+\lim_{\omega\rightarrow0^{+}}\Re\{G_{p}(j\omega)G_{c}(j\omega)\} & =-segn(k)\cdot\infty\\
+\lim_{\omega\rightarrow0^{+}}\Im\{G_{p}(j\omega)G_{c}(j\omega)\} & =-segn(k)\cdot\infty
+\end{array}\right.\\
+\lim_{\omega\rightarrow+\infty}|G_{p}(j\omega)G_{c}(j\omega)| & = & 0\\
+\Delta\arg(G_{p}(j\omega)G_{c}(j\omega)) & = & \frac{{\pi}}{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\family roman
+\noun on
+Intersezione con gli assi
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Intersezione con l'asse dei numeri reali 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\Re\{G_{p}(j\omega)G_{c}(j\omega)\}=0\Leftrightarrow$
+\end_inset
+
+Non esistono valori finiti di 
+\begin_inset Formula $\omega$
+\end_inset
+
+ che soddisfino l'equazione
+\end_layout
+
+\begin_layout Enumerate
+Intersezione con l'asse dei numeri immaginari
+\begin_inset Newline newline
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\Re\{G_{p}(j\omega)G_{c}(j\omega)\}=0\Leftrightarrow$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+Non esistono valori finiti di 
+\begin_inset Formula $\omega$
+\end_inset
+
+ che soddisfino l'equazione
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\noun on
+Disegno (Per 
+\begin_inset Formula $k=1$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Immagini/15.02.06_A1.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Si studi la stabilità con il criterio di Nyquist
+\end_layout
+
+\begin_layout Standard
+Il sistema è stabile con due poli a parte reale negativa.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\emph on
+Si verifichi il risultato ottenuto con il luogo delle radici
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Immagini/15.02.06_A2.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Quesito B
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Si consideri un sistema in retroazione unitaria con 
+\begin_inset Formula $\rg=\left.\frac{{k}}{(s^{2}+2s+2)(s+2)}\right|_{s=\jo}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\emph on
+Si determini il margine di guadagno ed il periodo critico di oscillazione
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $6$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4+k$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $20-k$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $(20-k)(4+k)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Per 
+\begin_inset Formula $k=20$
+\end_inset
+
+ è possibile scrivere l'equazione ausiliaria associata: 
+\begin_inset Formula $p_{a}(s)=4s^{2}+24=s^{2}+6=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $s=s_{\nicefrac{1}{2}}=\pm j\sqrt{6}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Il guadagno critico è quindi 
+\begin_inset Formula $k_{c}=20$
+\end_inset
+
+, il periodo critico di oscillazione è invece 
+\begin_inset Formula $T=\frac{2\pi}{\sqrt{6}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+Quesito C
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Si consideri un sistema in retroazione unitaria con 
+\begin_inset Formula $\rg=\frac{{10}}{\jo(1+2\jo)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\emph on
+Si traccino i diagrammi di bode della funzione sensitività.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\family typewriter
+\begin_inset Graphics
+	filename Immagini/15.02.06_A3.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Quesito D
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Si consideri un sistema in retroazione unitaria con 
+\begin_inset Formula $\rg=\left.\frac{{10}}{s(1+5s)}\right|_{s=\jo}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\emph on
+Si progetti un regolatore proporzionale-integrale con il metodo dell'ottimo
+ simmetrico.
+ Se possibile si cerchi di assicurare un margine di fase di 
+\begin_inset Formula $45\text{°}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a=\frac{{1+\sin\frac{\pi}{4}}}{\cos\frac{{\pi}}{4}}=1+\frac{{2}}{\sqrt{2}}\backsimeq2.41$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{i}=a^{2}\cdot T_{e}\backsimeq29.14$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K=\frac{{1}}{k\cdot T_{e}\cdot a}\backsimeq0.008$
 \end_inset
 
 
@@ -2762,7 +4222,7 @@ Il valore di picco si ha per
 \end_layout
 
 \begin_layout Subsection*
-Quesito C[i]
+Quesito C✔
 \end_layout
 
 \begin_layout Standard
@@ -2780,14 +4240,14 @@ Sia
 
 \emph on
 Si determini il margine di fase ed il margine di guadagno.
- Si progetti un controllore PD con le regole di Ziegler e Nichols.
+ 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $\rg=\frac{{2}}{\jo(1+\jo)(1+0.2\jo)}=-\frac{(2.4)}{(1+\omega^{2})(1+0.04\omega^{2})}+j\frac{{0.4\omega^{2}-2}}{\omega(1+\omega^{2})(1+0.04\omega^{2})}$
 \end_inset
 
-=
+
 \end_layout
 
 \begin_layout Standard
@@ -2820,7 +4280,7 @@ Si poteva giungere allo stesso risultato in maniera più semplice imponendo
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $|\rg[1]|=\frac{{2}}{\sqrt{5\sqrt{6}\cdot\sqrt{1.2}}}=\frac{{2}}{\sqrt{180}}=0.15$
+\begin_inset Formula $|\rg[1]|=\frac{{2}}{\sqrt{\sqrt{5}\cdot\sqrt{6}\cdot\sqrt{1.2}}}=\frac{{2}}{\sqrt{36}}=\frac{{1}}{3}=0.3$
 \end_inset
 
 
@@ -2828,7 +4288,7 @@ Si poteva giungere allo stesso risultato in maniera più semplice imponendo
 
 \begin_layout Standard
 Il margine di guadagno è: 
-\begin_inset Formula $MG=6.71$
+\begin_inset Formula $MG=3$
 \end_inset
 
 
@@ -2897,6 +4357,38 @@ Considero
 
 \begin_layout Standard
 \begin_inset Formula $M\phi\backsimeq0.52r\backsimeq25$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\emph on
+Si progetti un controllore PD con le regole di Ziegler e Nichols.
+\end_layout
+
+\begin_layout Standard
+Posto 
+\begin_inset Formula $k_{c}=3$
+\end_inset
+
+ e 
+\begin_inset Formula $T_{c}=\frac{2\pi}{3}=2.1$
+\end_inset
+
+Calcolo il valore dei coefficienti:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $k=0.5\cdot3=1.5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $k_{d}=0.2\cdot2.1=0.42$
 \end_inset
 
 
@@ -3000,7 +4492,7 @@ Considero nei calcoli
 \begin_layout Standard
 
 \family roman
-\begin_inset Formula $\rg=\left.\frac{{k(s^{2}+4s+8)}}{s^{2}(s+1)}\right|_{s=j\omega}=\frac{{k(8-\omega^{2}+4\jo)}}{(\jo)^{2}(1+j\omega)}=-\frac{{k(8+3\omega^{2})}}{\omega^{2}(1+\omega^{2})}-j\frac{{k(\omega^{2}-4)}}{\omega(1+\omega^{2})}$
+\begin_inset Formula $\rg=\left.\frac{{k(s^{2}+4s+8)}}{s^{2}(s+1)}\right|_{s=j\omega}=\frac{{k(8-\omega^{2}+4\jo)}}{(\jo)^{2}(1+j\omega)}=-\frac{{k(8+3\omega^{2})}}{\omega^{2}(1+\omega^{2})}+j\frac{{k(4-\omega^{2})}}{\omega(1+\omega^{2})}$
 \end_inset
 
 
@@ -3021,7 +4513,7 @@ Comportamento asintotico
 \begin{eqnarray*}
 \lim_{\omega\rightarrow0}\angle G_{p}(j\omega)G_{c}(j\omega) & = & \varphi_{0}-\mu\frac{{\pi}}{2}=\left\{ \begin{array}{cc}
 k>0 & -\pi\\
-k<0 & \pi
+k<0 & -2\pi
 \end{array}\right.\\
 \lim_{\omega\rightarrow+\infty}\angle G_{p}(j\omega)G_{c}(j\omega) & = & (m-n)\frac{{\pi}}{2}-(m_{2}-n_{2})\pi+\varphi_{0}=\left\{ \begin{array}{cc}
 k>0 & -\frac{{\pi}}{2}\\
@@ -3029,7 +4521,7 @@ k<0 & -\frac{{3}}{2}\pi
 \end{array}\right.\\
 \lim_{\omega\rightarrow0}|G_{p}(j\omega)G_{c}(j\omega)| & = & +\infty=\left\{ \begin{array}{cc}
 \lim_{\omega\rightarrow0^{+}}\Re\{G_{p}(j\omega)G_{c}(j\omega)\} & =-segn(k)\cdot\infty\\
-\lim_{\omega\rightarrow0^{+}}\Im\{G_{p}(j\omega)G_{c}(j\omega)\} & =-segn(k)\cdot\infty
+\lim_{\omega\rightarrow0^{+}}\Im\{G_{p}(j\omega)G_{c}(j\omega)\} & =+segn(k)\cdot\infty
 \end{array}\right.\\
 \lim_{\omega\rightarrow+\infty}|G_{p}(j\omega)G_{c}(j\omega)| & = & 0\\
 \Delta\arg(G_{p}(j\omega)G_{c}(j\omega)) & = & \frac{{\pi}}{2}
@@ -3062,7 +4554,7 @@ Intersezione con l'asse dei numeri reali
 \end_inset
 
 
-\begin_inset Formula $\Re\{\rg\}=$
+\begin_inset Formula $\Re\{\rg\}=-k$
 \end_inset
 
 
@@ -3128,31 +4620,38 @@ Si specifichi esattamente la posizione dei poli al variare di
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $k>9$
+\begin_inset Formula $k>1$
 \end_inset
 
-: Il diagramma circonda una volta in senso orario il punto critico 
-\begin_inset Formula $-1+j0$
-\end_inset
-
-, il sistema è instabile con un polo a parte reale positiva e due poli a
- parte reale negativa
+: Il diagramma circonda una volta in senso orario il punto critico e una
+ volta in senso antiorario, il sistema è stabile con 3 radici a parte reale
+ negativa.
 \begin_inset Newline newline
 \end_inset
 
 
-\begin_inset Formula $k<9$
+\begin_inset Formula $0<k<1$
 \end_inset
 
-: Il sistema è stabile con tre poli a parte reale nulla.
+: Il diagramma circonda due volte in senso orario il punto critico, il sistema
+ è instabile con un polo a parte reale positiva e due poli a parte reale
+ negativa.
 \begin_inset Newline newline
 \end_inset
 
 
-\begin_inset Formula $k=9$
+\begin_inset Formula $k=1$
 \end_inset
 
-: Il sistema è instabile
+: Il sistema è marginalmente stabile con due poli a parte reale nulla.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $k<0$
+\end_inset
+
+: Il sistema è instabile con un polo a parte reale positiva.
 \end_layout
 
 \begin_layout Subsection*
@@ -3433,7 +4932,7 @@ Quesito B [?]
 
 \family typewriter
 Si consideri un sistema in retroazione unitaria con 
-\begin_inset Formula $\pl=\frac{{e^{-sT}}}{s(2s+1)}$
+\begin_inset Formula $\pl=\left.\frac{{e^{-sT}}}{s(2s+1)}\right|_{\jo}$
 \end_inset
 
 , 
@@ -3470,6 +4969,13 @@ Per
 \end_inset
 
 :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $||$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3526,6 +5032,27 @@ Sia assegnato un sistema in retroazione unitaria con
 
 \emph on
 Si tari il regolatore in modo da garantire un margine di fase di 30°
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\emph on
+In alternativa a questo metodo 
+\begin_inset Quotes eld
+\end_inset
+
+grafico
+\begin_inset Quotes erd
+\end_inset
+
+ basato sul diagramma di Bode, è possibile utilizzare il metodo dell'ottimo
+ simmetrico.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3577,15 +5104,6 @@ ente.
 
 \begin_layout Standard
 Il margine di guadagno non è finito.
-\end_layout
-
-\begin_layout Subsubsection*
-
-\emph on
-\begin_inset Newpage newpage
-\end_inset
-
-
 \end_layout
 
 \begin_layout Chapter
@@ -3733,7 +5251,7 @@ Si consideri un sistema in retroazione unitaria con
 
 .
 \begin_inset Note Comment
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -4406,7 +5924,7 @@ Quesito C
 \end_layout
 
 \begin_layout Chapter
-Appello del 12.02.13 [?]
+Appello del 12.02.13
 \end_layout
 
 \begin_layout Subsection*
@@ -4833,7 +6351,7 @@ Disegno (Per
 \end_layout
 
 \begin_layout Subsection*
-Quesito C[?]
+Quesito C
 \end_layout
 
 \begin_layout Standard
@@ -4857,7 +6375,7 @@ Tarare un regolatore PI utilizzando le regole di Ziegler-Nichols.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\angle\rg=-\pi\Leftrightarrow-0.2\omega-2k\pi-\frac{{\pi}}{2}=-\pi$
+\begin_inset Formula $\angle\rg=-\pi\Leftrightarrow-0.2\omega+2k\pi-\frac{{\pi}}{2}=-\pi$
 \end_inset
 
 
@@ -4885,6 +6403,13 @@ Tarare un regolatore PI utilizzando le regole di Ziegler-Nichols.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula $T_{c}=\frac{{2\pi}}{\omega_{k}}=\frac{{4\pi}}{5\pi}=\frac{{4}}{5}=0.8$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $K=k_{c}\cdot0.45=3.53$
 \end_inset
 
@@ -4892,7 +6417,7 @@ Tarare un regolatore PI utilizzando le regole di Ziegler-Nichols.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $T_{i}=T_{c}\cdot0.85=0.11\Leftrightarrow K_{i}=9.1$
+\begin_inset Formula $T_{i}=T_{c}\cdot0.85=0.68\Leftrightarrow K_{i}=1.47$
 \end_inset
 
 
@@ -4901,7 +6426,7 @@ Tarare un regolatore PI utilizzando le regole di Ziegler-Nichols.
 \begin_layout Subsubsection*
 
 \emph on
-[?]Dopo aver effettuato la taratura, si determinino i margini di stabilità
+Dopo aver effettuato la taratura, si determinino i margini di stabilità
  del sistema
 \end_layout
 
@@ -4911,7 +6436,7 @@ Il guadagno di anello è ora:
 \end_inset
 
 
-\begin_inset Formula $\rg=K_{i}\frac{{(1+\nicefrac{K}{K_{i}}\jo)e^{-0.2\jo}}}{(\jo)^{2}}$
+\begin_inset Formula $\rg=K_{i}\frac{{(1+\nicefrac{K}{K_{i}}\jo)e^{-0.2\jo}}}{(\jo)^{2}}=9.1\frac{{(1+0.39\jo)e^{-0.2\jo}}}{(\jo)^{2}}$
 \end_inset
 
 
@@ -4931,6 +6456,10 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
+Calcolo il margine di fase:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $|\rg|=1\Leftrightarrow\omega_{1}=\sqrt{\frac{K^{2}}{2}+\frac{{\sqrt{K^{4}+4K_{1}^{2}}}}{2}}=4.17$
 \end_inset
 
@@ -4938,10 +6467,49 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $M\phi\backsimeq40$
+\begin_inset Formula $\angle\rg[cp]=-\arctan(\omega_{cp}\frac{{K}}{K_{i}})-\pi-0.2\omega_{cp}\backsimeq-2.96$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M\phi=-0.18r=10.61$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Calcolo il margine di stabilità:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\angle\rg=-\pi\Leftrightarrow\arctan(0.39\omega)-0.2\omega-2\pi=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pongo 
+\begin_inset Formula $p(\omega)=\arctan(0.39\omega)-0.2\omega-2\pi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+La frequenza di cross-phase è 
+\begin_inset Formula $\omega_{cp}=5.7449$
+\end_inset
+
+.
+ Il margine di guadagno è: 
+\begin_inset Formula $k=1.4848$
+\end_inset
+
+-
 \end_layout
 
 \end_body
