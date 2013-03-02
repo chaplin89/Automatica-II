@@ -3,6 +3,7 @@
 \begin_document
 \begin_header
 \textclass scrbook
+\options idxtotoc
 \use_default_options true
 \maintain_unincluded_children false
 \language italian
@@ -20,7 +21,7 @@
 \font_tt_scale 100
 
 \graphics default
-\default_output_format pdf2
+\default_output_format pdf5
 \output_sync 0
 \bibtex_command default
 \index_command default
@@ -70,7 +71,7 @@
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
-\html_math_output 2
+\html_math_output 3
 \html_css_as_file 0
 \html_be_strict true
 \end_header
@@ -380,6 +381,19 @@ Per quanto detto, il regolatore in grado di assolvere questo compito è quello
  PD.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Taratura!basata sul l.d.r.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection*
 
 \emph on
@@ -415,6 +429,19 @@ K_{p} & = & \omega_{n}^{2}
 T_{d} & = & \frac{17+a}{100}\\
 K_{p} & = & 100
 \end{array}\right.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Taratura!analitica
+\end_layout
+
 \end_inset
 
 
@@ -483,6 +510,19 @@ Il margine di fase
 
 \begin_layout Standard
 \begin_inset Formula $M\phi=0.48$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Margini di stabilità
+\end_layout
+
 \end_inset
 
 
@@ -633,6 +673,17 @@ Poiché ci sono 3 poli, per avere una dinamica del secondo ordine sfrutto
 \end_inset
 
 .
+ 
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Taratura!analitica
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection*
@@ -691,6 +742,16 @@ In definitiva, la f.d.t.
 \end_inset
 
 
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Taratura!analitica
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection*
@@ -721,6 +782,19 @@ L'errore di velocità è:
  & = & \lim_{s\rightarrow0}\left(\frac{{1}}{s}-\frac{{1}}{s}\cdot\frac{{5102}}{s^{2}+100s+5102}\right)=\\
  & = & 0.02
 \end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Errori a regime
+\end_layout
 
 \end_inset
 
@@ -846,6 +920,19 @@ Disegno (per
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Diagramma!di Nyquist
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection*
 
 \emph on
@@ -865,6 +952,16 @@ Il sistema in anello aperto è instabile con un polo a parte reale positiva.
 \end_inset
 
  e possiede due poli a parte reale positiva.
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Criterio di Nyquist
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1014,6 +1111,19 @@ Disegno
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Diagramma!di Nyquist
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection*
 
 \emph on
@@ -1197,6 +1307,19 @@ Disegno
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Diagramma!di Nyquist
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection*
 
 \emph on
@@ -1212,6 +1335,19 @@ Si determini il margine di fase
 
 \begin_layout Standard
 \begin_inset Formula $M\phi=\pi+\angle\rg[c]=-3\omega_{c}-3\arctan(5\omega_{c})+\pi=-0.53$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Margini di stabilità
+\end_layout
+
 \end_inset
 
 
@@ -1421,6 +1557,19 @@ Disegno
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Diagramma!di Nyquist
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection*
 
 \emph on
@@ -1448,6 +1597,16 @@ Per tali valori di
  Essendo il sistema in anello aperto instabile con un polo a parte reale
  positiva, il sistema in anello chiuso è instabile con un polo a parte reale
  positiva.
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Criterio di Nyquist
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection*
@@ -1584,6 +1743,16 @@ Il margine di guadagno è pertanto:
 \end_inset
 
 , il sistema è instabile.
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Margini di stabilità
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1691,6 +1860,16 @@ e quindi non è ancora in grado di garantire la stabilità.
 \begin_layout Standard
 Con questo controllore è possibile pertanto rendere asintoticamente stabile
  il sistema.
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Taratura!analitica
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection*
@@ -1764,19 +1943,20 @@ In definitiva l'equazione sarà:
 
 .
  Da essa è possibile risalire ai valori dei coefficienti.
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Taratura!analitica
 \end_layout
 
-\begin_layout Standard
-
-\emph on
-\begin_inset Newpage newpage
 \end_inset
 
 
 \end_layout
 
 \begin_layout Chapter
-Appello del 17.04.04[G]
+Appello del 17.04.04 [G]
 \end_layout
 
 \begin_layout Subsection*
@@ -1930,6 +2110,19 @@ Disegno (Per
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Diagramma!di Nyquist
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection*
 
 \emph on
@@ -1976,8 +2169,31 @@ o il punto critico
  Il sistema è asintoticamente stabile, 3 poli a parte reale negativa
 \end_layout
 
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Criterio di Nyquist
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection*
-Quesito B
+Quesito B 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Nota: L'appello originario conteneva immagini che non sono state digitalizzate.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection*
@@ -2022,6 +2238,19 @@ K per i quali il sistema chiuso in retroazione unitaria sia stabile.
 
 \begin_layout Standard
 \begin_inset Formula $\frac{k}{2}\pi<1\leftrightarrow k<\frac{2}{\pi}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Margini di stabilità
+\end_layout
+
 \end_inset
 
 
@@ -2108,6 +2337,19 @@ Si determini il margine di fase
 
 
 \begin_inset Formula $M\phi=-0.25$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Margini di stabilità
+\end_layout
+
 \end_inset
 
 
@@ -2269,6 +2511,19 @@ Disegno (Per
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Diagramma!di Nyquist
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection*
 
 \emph on
@@ -2304,6 +2559,19 @@ Si studi la stabilità del sistema in anello chiuso al variare di
 \end_inset
 
 , il sistema è marginalmente stabile con un polo nell'origine.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Criterio di Nyquist
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection*
@@ -2343,19 +2611,6 @@ Considero il sistema approssimato:
 \end_layout
 
 \begin_layout Standard
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
 \begin_inset Formula $\pl=\frac{{5e^{-0.02\jo}}}{(1+0.1s)(1+0.5s)}\backsimeq\frac{{5}}{(1+0.1s)(1+0.5s)(1+0.02s)}\backsimeq\frac{{5}}{(1+0.3s)(1+0.02s)}$
 \end_inset
 
@@ -2363,14 +2618,12 @@ Considero il sistema approssimato:
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 Scelgo la costante 
 \begin_inset Formula $T_{n}$
 \end_inset
 
-in modo da eliminare il polo sito in 
-\begin_inset Formula $-0.02$
+ in modo da eliminare il polo sito in 
+\begin_inset Formula $s_{1}=-0.02$
 \end_inset
 
 : 
@@ -2381,10 +2634,21 @@ in modo da eliminare il polo sito in
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 Di conseguenza 
 \begin_inset Formula $\frac{{T_{n}}}{K_{c}}=2\cdot0.3\cdot5=K_{c}\Leftrightarrow K_{c}=0.0067$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Taratura!col metodo del modulo ottimo
+\end_layout
+
 \end_inset
 
 
@@ -2541,6 +2805,19 @@ Disegno (Per
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Diagramma!di Nyquist
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection*
 
 \emph on
@@ -2553,6 +2830,16 @@ Il sistema è stabile per ogni
 \end_inset
 
 .
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Criterio di Nyquist
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection*
@@ -2612,6 +2899,19 @@ Il guadagno di anello è:
 
 \begin_layout Standard
 \begin_inset Formula $k=\pm0.070795203$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Taratura!analitica
+\end_layout
+
 \end_inset
 
 
@@ -2823,6 +3123,19 @@ Il guadagno critico si ha per
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Margini di stabilità
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection*
 
 \emph on
@@ -2839,10 +3152,6 @@ T_{d} & = & 0.12\cdot T_{c}=2.17
 
 \end_inset
 
-
-\begin_inset Newline newline
-\end_inset
-
 Il controllore avrà quindi la seguente f.d.t.:
 \end_layout
 
@@ -2853,8 +3162,21 @@ Il controllore avrà quindi la seguente f.d.t.:
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Taratura!col metodo di Ziegler-Nichols
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
-Appello del 20.09.05
+Appello del 20.09.05[v]
 \end_layout
 
 \begin_layout Subsection*
@@ -3995,11 +4317,11 @@ Si progetti un regolatore proporzionale-integrale con il metodo dell'ottimo
 \end_layout
 
 \begin_layout Chapter
-Appello del 21.09.10 [i]
+Appello del 21.09.10
 \end_layout
 
 \begin_layout Subsection*
-Quesito A✔
+Quesito A
 \end_layout
 
 \begin_layout Standard
@@ -4157,7 +4479,7 @@ Per
 \end_layout
 
 \begin_layout Subsection*
-Quesito B[i]
+Quesito B
 \end_layout
 
 \begin_layout Standard
@@ -4184,21 +4506,54 @@ Si determini l'intervallo di valori di
 \end_layout
 
 \begin_layout Standard
-Il valore di picco si ha per 
-\begin_inset Formula $\omega=\overline{\omega}=\omega_{n}\sqrt{1-2\delta^{2}}$
+La f.d.t.
+ del sistema in anello chiuso è:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $G(s)=\frac{{1}}{s^{2}+10\delta s+1}$
 \end_inset
 
 .
- In corrispondenza di tale valore il modulo di 
-\begin_inset Formula $\rg$
+\end_layout
+
+\begin_layout Standard
+Il valore di picco si ha per 
+\begin_inset Formula $\omega=\overline{\omega}=\omega_{n}\sqrt{1-2\delta_{c}^{2}}$
+\end_inset
+
+ dove 
+\begin_inset Formula $\delta_{c}$
+\end_inset
+
+ è il coefficiente di smorzamento (chiamato così per differenziarlo dal
+ 
+\begin_inset Formula $\delta$
+\end_inset
+
+ della f.d.t.).
+ Posto 
+\begin_inset Formula $\delta_{c}=5\delta$
+\end_inset
+
+, diventa: 
+\begin_inset Formula $\omega=\overline{\omega}=\omega_{n}\sqrt{1-50\delta^{2}}=\sqrt{1-50\delta^{2}}$
+\end_inset
+
+.
+ in corrispondenza di tale valore, il modulo di 
+\begin_inset Formula $G(\jo)$
 \end_inset
 
  vale 
-\begin_inset Formula $M(\overline{\omega})=\frac{{1}}{2\delta\sqrt{1-\delta^{2}}}$
+\begin_inset Formula $M(\overline{\omega})=\frac{{1}}{\sqrt{(1-\overline{\omega}^{2})^{2}+100\delta^{2}\overline{\omega}^{2}}}=\frac{{1}}{\sqrt{(1-1+50\delta^{2})^{2}+100\delta^{2}(1-50\delta^{2})}}=\frac{{0.1}}{\delta\sqrt{1-25\delta^{2}}}$
 \end_inset
 
 .
- Affinché sia 
+\end_layout
+
+\begin_layout Standard
+Affinché sia 
 \begin_inset Formula $M(\overline{\omega})<1.4$
 \end_inset
 
@@ -4215,14 +4570,57 @@ Il valore di picco si ha per
 \noun off
 \color none
 
-\begin_inset Formula $\delta\sqrt{1-\delta^{2}}\geq0.36$
+\begin_inset Formula $0.1\leq\delta\sqrt{1-25\delta^{2}}\cdot1.4\Leftrightarrow\delta\sqrt{1-25\delta^{2}}\geq0.07$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Affinché la disequazione, ed il sistema, abbiano senso, bisogna imporre:
+ 
+\begin_inset Formula $0\leq\delta\leq0.2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Elevo tutto al quadrato:
+\begin_inset Formula $\delta^{2}-25\delta^{4}-0.0049\geq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Posto 
+\begin_inset Formula $\delta^{2}=z$
+\end_inset
+
+: 
+\begin_inset Formula $z^{2}-0.04z+0.000196\leq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $0.01\leq z\leq0.03$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $0.1\leq\delta\leq0.17$
 \end_inset
 
 .
 \end_layout
 
 \begin_layout Subsection*
-Quesito C✔
+Quesito C
 \end_layout
 
 \begin_layout Standard
@@ -4389,15 +4787,6 @@ Calcolo il valore dei coefficienti:
 
 \begin_layout Standard
 \begin_inset Formula $k_{d}=0.2\cdot2.1=0.42$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-\begin_inset Newpage newpage
 \end_inset
 
 
@@ -4710,7 +5099,7 @@ Supponendo un disturbo sul controllore
 \end_layout
 
 \begin_layout Chapter
-Appello del 03.09.12 [?]
+Appello del 03.09.12 [i]
 \end_layout
 
 \begin_layout Subsection*
@@ -4867,6 +5256,19 @@ Disegno
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Diagramma!di Nyquist
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection*
 
 \emph on
@@ -4910,6 +5312,19 @@ Per
  il sistema è marginalmente stabile
 \end_layout
 
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Criterio di Nyquist
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection*
 
 \emph on
@@ -4925,7 +5340,7 @@ Si determini il valore di k per il quale la risposta all'impulso del sistema
 \end_layout
 
 \begin_layout Subsection*
-Quesito B [?]
+Quesito B
 \end_layout
 
 \begin_layout Standard
@@ -4994,6 +5409,19 @@ Per
 
 \begin_layout Standard
 \begin_inset Formula $M\phi=-1.31$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Margine di fase
+\end_layout
+
 \end_inset
 
 
@@ -5095,6 +5523,19 @@ Variare la costante del regolatore non ha effetti sulla fase ma solo sul
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Taratura!basata sul diagramma di Bode
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection*
 
 \emph on
@@ -5146,6 +5587,19 @@ La funzione sensitività è:
 \align center
 \begin_inset Graphics
 	filename Immagini/26.09.12_A.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Diagramma!di Bode
+\end_layout
 
 \end_inset
 
@@ -5223,12 +5677,24 @@ L'uscita
 \begin_inset Formula $|G_{0}(\jo_{2})|=\frac{{1}}{\sqrt{\omega_{2}^{4}+3\omega_{2}^{2}+1}}\backsimeq1$
 \end_inset
 
-His face was so melted from the weed effect that we had a close casket funeral﻿
- 
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula $\angle G_{0}(\jo_{2})=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Risposta a regime
+\end_layout
+
 \end_inset
 
 
@@ -5441,6 +5907,19 @@ Disegno
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Diagramma!di Nyquist
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection*
 
 \emph on
@@ -5503,6 +5982,19 @@ Per
 \emph default
 : Il sistema è instabile con un polo a parte reale nulla e un polo a parte
  reale positiva e uno a parte reale negativa
+\end_layout
+
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Criterio di Nyquist
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection*
@@ -5768,6 +6260,19 @@ T_{i} & = & 0.85\cdot T_{c}=1.542
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Taratura!col metodo di Ziegler-Nichols
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection*
 
 \emph on
@@ -5778,10 +6283,6 @@ Utilizzando il controllore tarato al punto precedente, si dica (motivando
 \end_inset
 
  il sistema chiuso in retroazione sia stabile.
-\begin_inset Newpage newpage
-\end_inset
-
-
 \end_layout
 
 \begin_layout Chapter
@@ -5915,6 +6416,19 @@ Nel secondo caso, bisogna imporre:
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Taratura!basata sul diagramma di Bode
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection*
 Quesito B
 \end_layout
@@ -5978,6 +6492,19 @@ Sfruttando i diagrammi tracciati, si fornisca una stima dei margini di stabilit�
 \align center
 \begin_inset Graphics
 	filename Immagini/12.02.13_A.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Diagramma!di Bode
+\end_layout
 
 \end_inset
 
@@ -6146,6 +6673,19 @@ Disegno (Per
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Diagramma!di Nyquist
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection*
 
 \emph on
@@ -6154,7 +6694,7 @@ Posto
 \end_inset
 
 , si determini la posizione dei poli utilizzando esclusivamente il criterio
- di Nyquist.
+ di Nyquist 
 \end_layout
 
 \begin_layout Standard
@@ -6180,6 +6720,19 @@ Per il criterio di Nyquist, essendo il sistema in anello aperto instabile,
 : il sistema in anello chiuso è instabile con un polo a parte reale negativa
 \end_layout
 
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Criterio di Nyquist
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection*
 
 \emph on
@@ -6193,6 +6746,7 @@ Posto
 \end_inset
 
  utilizzando esclusivamente il criterio di Nyquist.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -6348,6 +6902,26 @@ Disegno (Per
 \end_inset
 
 : Il sistema è instabile con due poli a parte reale positiva
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Diagramma!di Nyquist
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Criterio di Nyquist
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection*
@@ -6372,6 +6946,19 @@ Si consideri un sistema in retroazione unitaria con
 
 \emph on
 Tarare un regolatore PI utilizzando le regole di Ziegler-Nichols.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Taratura!col metodo di Ziegler-Nichols
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6427,7 +7014,7 @@ Tarare un regolatore PI utilizzando le regole di Ziegler-Nichols.
 
 \emph on
 Dopo aver effettuato la taratura, si determinino i margini di stabilità
- del sistema
+ del sistema 
 \end_layout
 
 \begin_layout Standard
@@ -6510,6 +7097,286 @@ La frequenza di cross-phase è
 \end_inset
 
 -
+\end_layout
+
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Margini di stabilità
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Appello del 26.02.13 [i]
+\end_layout
+
+\begin_layout Subsection*
+Quesito A
+\end_layout
+
+\begin_layout Subsection*
+Quesito B
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Si consideri un sistema in retroazione unitaria con 
+\begin_inset Formula $G_{p}(s)=\frac{s+0.1}{s^{3}(s-10)},G_{c}(s)=1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+
+\emph on
+Si tracci il diagramma polare di Nyquist (considero nei calcoli 
+\begin_inset Formula $\omega>0$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\begin_inset Formula $\rg=\left.-0.01\frac{(1+10s)}{s^{3}(1-0.1s)}\right|_{s=j\omega}=-0.01\frac{(1+10\jo)}{(\jo)^{3}(1-0.1\jo)}=-0.01j\frac{{(1+10\jo)(1+0.1\jo)}}{\omega^{3}(1+0.01\omega^{2})}=$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang english
+\begin_inset Formula $=\frac{{0.101}}{\omega^{2}(1+0.01\omega^{2})}-0.01j\frac{{1-\omega^{2}}}{\omega^{3}(1+0.01\omega^{2})}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\family roman
+\noun on
+Comportamento asintotico
+\begin_inset VSpace defskip
+\end_inset
+
+
+\noun default
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\lim_{\omega\rightarrow0}\angle G_{p}(j\omega)G_{c}(j\omega) & = & \varphi_{0}-\mu\frac{{\pi}}{2}=-\frac{{5}}{2}\pi\\
+\lim_{\omega\rightarrow+\infty}\angle G_{p}(j\omega)G_{c}(j\omega) & = & (m-n)\frac{{\pi}}{2}-(m_{2}-n_{2})\pi+\varphi_{0}=-\frac{{3}}{2}\pi\\
+\lim_{\omega\rightarrow0}|G_{p}(j\omega)G_{c}(j\omega)| & = & +\infty=\left\{ \begin{array}{cc}
+\lim_{\omega\rightarrow0^{+}}\Re\{G_{p}(j\omega)G_{c}(j\omega)\} & =+\infty\\
+\lim_{\omega\rightarrow0^{+}}\Im\{G_{p}(j\omega)G_{c}(j\omega)\} & =-\infty
+\end{array}\right.\\
+\lim_{\omega\rightarrow+\infty}|G_{p}(j\omega)G_{c}(j\omega)| & = & 0\\
+\Delta\arg(G_{p}(j\omega)G_{c}(j\omega)) & = & \pi
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\family roman
+\noun on
+Intersezione con gli assi
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Intersezione con l'asse dei numeri reali 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\Im\{G_{p}(j\omega)G_{c}(j\omega)\}=0\Leftrightarrow\omega_{\nicefrac{{1}}{2}}=\pm1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\Re\{\rg[1]\}=0.1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Intersezione con l'asse dei numeri immaginari
+\begin_inset Newline newline
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\Re\{G_{p}(j\omega)G_{c}(j\omega)\}=0\Leftrightarrow$
+\end_inset
+
+Non esistono valori finiti di 
+\begin_inset Formula $\omega$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\noun on
+Disegno
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Immagini/26.02.13.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Diagramma!di Nyquist
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Quesito C
+\end_layout
+
+\begin_layout Standard
+
+\family typewriter
+Si consideri un sistema in retroazione unitaria con 
+\begin_inset Formula $G_{p}(s)=\frac{{1}}{(s+2)(s+9)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\emph on
+Si progetti il regolatore 
+\begin_inset Formula $G_{c}(s)$
+\end_inset
+
+ in modo che il sistema in anello chiuso abbia poli dominanti in 
+\begin_inset Formula $-3\pm3j$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+L'equazione caratteristica del sistema in anello aperto è: 
+\begin_inset Formula $p(s)=s^{2}+11s+18$
+\end_inset
+
+.
+ L'obiettivo del controllo è quello di ottenere un sistema in anello chiuso
+ con un equazione caratteristica del tipo: 
+\begin_inset Formula $p'(s)=s^{2}+6s+18$
+\end_inset
+
+.
+ Il controllore in grado di assolvere questo compito è un controllore del
+ tipo 
+\begin_inset Formula $G_{c}(s)=-5s$
+\end_inset
+
+, infatti: 
+\begin_inset Formula $G(s)=\frac{{G_{c}(s)G_{p}(s)}}{1+G_{c}(s)G_{p}(s)}=-5\frac{{s}}{s^{2}+11s+18-5s}=-5\frac{{s}}{s^{2}+6s+18}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Taratura!analitica
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset index_print
+LatexCommand printindex
+type "idx"
+
+\end_inset
+
+
 \end_layout
 
 \end_body
