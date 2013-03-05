@@ -3176,7 +3176,7 @@ Taratura!col metodo di Ziegler-Nichols
 \end_layout
 
 \begin_layout Chapter
-Appello del 20.09.05
+Appello del 20.09.05[v]
 \end_layout
 
 \begin_layout Subsection*
@@ -3443,19 +3443,6 @@ Disegno (Per
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Diagramma!di Nyquist
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsubsection*
 
 \emph on
@@ -3480,19 +3467,6 @@ Nel secondo caso il diagramma non circonda il punto critico
 \end_inset
 
 , pertanto il sistema in anello chiuso è asintoticamente stabile.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Criterio di Nyquist
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsubsection*
@@ -3594,19 +3568,6 @@ Per
  il sistema è marginalmente stabile, per valori superiori il sistema è instabile.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Margini di stabilità
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection*
 Quesito C
 \end_layout
@@ -3643,19 +3604,6 @@ Affinché il sistema in anello chiuso abbia un errore di velocità finito,
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Errori a regime
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsubsection*
@@ -3833,19 +3781,6 @@ Affinché la prima riga non presenti variazioni di segno, dev'essere:
 .
 \end_layout
 
-\begin_layout Standard
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Taratura!analitica
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsubsection*
 Si determinino i valori dei parametri in modo che la dinamica del sistema
  in anello chiuso sia del secondo ordine e che il tempo di assestamento
@@ -3917,19 +3852,6 @@ Il guadagno di anello sarà
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Taratura!analitica
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Chapter
@@ -4092,38 +4014,12 @@ Disegno (Per
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Diagramma!di Nyquist
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsubsection*
 Si studi la stabilità con il criterio di Nyquist
 \end_layout
 
 \begin_layout Standard
 Il sistema è stabile con due poli a parte reale negativa.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Criterio di Nyquist
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsubsection*
@@ -4341,19 +4237,6 @@ Il guadagno critico è quindi
 .
 \end_layout
 
-\begin_layout Standard
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Margini di stabilità
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection*
 Quesito C
 \end_layout
@@ -4380,19 +4263,6 @@ Si traccino i diagrammi di bode della funzione sensitività.
 \family typewriter
 \begin_inset Graphics
 	filename Immagini/15.02.06_A3.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Diagramma!di Bode
-\end_layout
 
 \end_inset
 
@@ -4441,19 +4311,6 @@ Si progetti un regolatore proporzionale-integrale con il metodo dell'ottimo
 
 \begin_layout Standard
 \begin_inset Formula $K=\frac{{1}}{k\cdot T_{e}\cdot a}\backsimeq0.008$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Taratura!analitica
-\end_layout
-
 \end_inset
 
 
@@ -4593,19 +4450,6 @@ Disegno
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Diagramma!di Nyquist
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsubsection*
 
 \emph on
@@ -4632,19 +4476,6 @@ Per
 
  è instabile con un polo a parte reale positiva e due poli a parte reale
  negativa.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Criterio di Nyquist
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection*
@@ -4788,19 +4619,6 @@ Posto
 .
 \end_layout
 
-\begin_layout Standard
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Taratura!analitica
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection*
 Quesito C
 \end_layout
@@ -4942,19 +4760,6 @@ Considero
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Margini di stabilità
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsubsection*
 
 \emph on
@@ -4987,25 +4792,12 @@ Calcolo il valore dei coefficienti:
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Taratura!col metodo di Ziegler-Nichols
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Chapter
 Appello del 05.07.12 [i]
 \end_layout
 
 \begin_layout Subsection*
-Quesito A
+Quesito A ✓
 \end_layout
 
 \begin_layout Standard
@@ -5050,34 +4842,8 @@ Posto
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Diagramma!di Bode
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Margini di stabilità
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection*
-Quesito B
+Quesito B [N]
 \end_layout
 
 \begin_layout Standard
@@ -5232,19 +4998,6 @@ Disegno (Per
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Diagramma!di Nyquist
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsubsection*
 
 \emph on
@@ -5259,8 +5012,9 @@ Si specifichi esattamente la posizione dei poli al variare di
 \begin_inset Formula $k>1$
 \end_inset
 
-: Il diagramma circonda una volta in senso orario e una volta in senso antiorari
-o il punto critico, il sistema è stabile con 3 radici a parte reale negativa.
+: Il diagramma circonda una volta in senso orario il punto critico e una
+ volta in senso antiorario, il sistema è stabile con 3 radici a parte reale
+ negativa.
 \begin_inset Newline newline
 \end_inset
 
@@ -5269,7 +5023,7 @@ o il punto critico, il sistema è stabile con 3 radici a parte reale negativa.
 \end_inset
 
 : Il diagramma circonda due volte in senso orario il punto critico, il sistema
- è instabile con due poli a parte reale positiva e un polo a parte reale
+ è instabile con un polo a parte reale positiva e due poli a parte reale
  negativa.
 \begin_inset Newline newline
 \end_inset
@@ -5278,9 +5032,7 @@ o il punto critico, il sistema è stabile con 3 radici a parte reale negativa.
 \begin_inset Formula $k=1$
 \end_inset
 
-: dallo studio dell'equazione caratteristica col criterio di Routh deriva
- che il sistema è stabile con un polo a parte reale negativa e due poli
- a parte reale nulla.
+: Il sistema è marginalmente stabile con due poli a parte reale nulla.
 \begin_inset Newline newline
 \end_inset
 
@@ -5291,21 +5043,8 @@ o il punto critico, il sistema è stabile con 3 radici a parte reale negativa.
 : Il sistema è instabile con un polo a parte reale positiva.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Criterio di Nyquist
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection*
-Quesito C [i]
+Quesito C 
 \end_layout
 
 \begin_layout Standard
@@ -5345,42 +5084,6 @@ Si tari un regolatore PID con le regole di Ziegler-Nichols in anello chiuso
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Formula $k=0.6\cdot k_{c}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\emph on
-\begin_inset Formula $T_{i}=0.85\cdot T_{c}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $T_{d}=1.2\cdot T_{c}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Taratura!col metodo di Ziegler-Nichols
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsubsection*
 
 \emph on
@@ -5392,15 +5095,15 @@ Supponendo un disturbo sul controllore
 \begin_inset Formula $u(t)=\delta(t)+e^{-t}$
 \end_inset
 
- si determini il valore della risposta a regime [i]
+ si determini il valore della risposta a regime
 \end_layout
 
 \begin_layout Chapter
-Appello del 03.09.12 [r]
+Appello del 03.09.12 [i]
 \end_layout
 
 \begin_layout Subsection*
-Quesito A
+Quesito A ✓
 \end_layout
 
 \begin_layout Standard
@@ -5671,6 +5374,11 @@ Assumendo
 \end_layout
 
 \begin_layout Standard
+Il ritardo fuori dall'anello ha il solo scopo di ritardare l'uscita, non
+ influenza la stabilità del sistema.
+\end_layout
+
+\begin_layout Standard
 Per 
 \begin_inset Formula $T=4$
 \end_inset
@@ -5679,21 +5387,21 @@ Per
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\angle\rg=-\pi\Leftrightarrow$
+\begin_inset Formula $||$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $|\rg|=1\Leftrightarrow0.1=\omega\sqrt{2\omega^{2}+1}\Leftrightarrow\omega=\omega_{c}=0.52$
+\begin_inset Formula $|\rg|=1\Leftrightarrow0.1=\omega\sqrt{2\omega^{2}+1}\Leftrightarrow\omega=\omega_{1}=0.52$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $\angle\rg[c]=-0.52\cdot4-\frac{{\pi}}{2}-\arctan(2\cdot0.52)=-4.45$
+\begin_inset Formula $\angle\rg[1]=-0.52\cdot4-\frac{{\pi}}{2}-\arctan(2\cdot0.52)=-4.45$
 \end_inset
 
 
@@ -5711,7 +5419,7 @@ Per
 status open
 
 \begin_layout Plain Layout
-Margini di stabilità
+Margine di fase
 \end_layout
 
 \end_inset
@@ -5726,19 +5434,12 @@ Si determini il valore limite del ritardo di
 \begin_inset Formula $\pl$
 \end_inset
 
- corrispondente ad un funzionamento stabile e quindi si tracci l'andamento
+ corrispondente ad un funzionamento stabile, e quindi si tracci l'andamento
  qualitativo della risposta all'impulso del sistema in figura.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Formula $M\phi(T)=-0.52\cdot T-\arctan(2\cdot0.52)+\pi>0\Leftrightarrow T<\frac{{\pi-\arctan(2\cdot0.52)}}{0.52}$
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection*
-Quesito C
+Quesito C ✓
 \end_layout
 
 \begin_layout Standard
@@ -5824,7 +5525,7 @@ Variare la costante del regolatore non ha effetti sulla fase ma solo sul
 
 \begin_layout Standard
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Taratura!basata sul diagramma di Bode
@@ -5851,7 +5552,7 @@ Appello del 26.09.12 [i]
 \end_layout
 
 \begin_layout Subsection*
-Quesito A
+Quesito A ✓
 \end_layout
 
 \begin_layout Standard
@@ -6000,7 +5701,7 @@ Risposta a regime
 \end_layout
 
 \begin_layout Subsection*
-Quesito B
+Quesito B ✓
 \end_layout
 
 \begin_layout Standard
@@ -6308,7 +6009,7 @@ Il sistema non è mai marginalmente stabile.
 \end_layout
 
 \begin_layout Subsection*
-Quesito C [i]
+Quesito C
 \end_layout
 
 \begin_layout Standard
@@ -6337,6 +6038,8 @@ Si determinino le costanti
 \end_inset
 
  utilizzando le regole di Ziegler-Nichols in anello chiuso.
+\emph default
+✓
 \end_layout
 
 \begin_layout Standard
@@ -6571,7 +6274,7 @@ Taratura!col metodo di Ziegler-Nichols
 \end_layout
 
 \begin_layout Subsubsection*
-[i]
+
 \emph on
 Utilizzando il controllore tarato al punto precedente, si dica (motivando
  la risposta) se con l'introduzione di un ritardo di 1 s nella f.d.t.
@@ -6727,11 +6430,11 @@ Taratura!basata sul diagramma di Bode
 \end_layout
 
 \begin_layout Subsection*
-Quesito B [i]
+Quesito B
 \end_layout
 
 \begin_layout Subsection*
-Quesito C [i]
+Quesito C
 \end_layout
 
 \begin_layout Chapter
@@ -6764,14 +6467,14 @@ Si traccino i diagrammi asintotici di Bode di ampiezza e fase (approssimati
 \begin_inset Formula $\pl$
 \end_inset
 
- nonché i diagrammi risultanti
+ nonché i diagrami risultanti
 \end_layout
 
 \begin_layout Subsubsection*
 
 \emph on
 Effettuando le dovute correzioni (giustificate) si traccino i diagrammi
- di Bode effettivi di 
+ di bode effettivi di 
 \begin_inset Formula $\pl$
 \end_inset
 
@@ -7393,28 +7096,7 @@ La frequenza di cross-phase è
 \begin_inset Formula $k=1.4848$
 \end_inset
 
- 
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Si ricavano per via numerica.
-\end_layout
-
-\end_inset
-
-
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-NOTA: la funzione non è monotòna, va studiata la derivata prima prima di
- applicare qualsiasi metodo numerico.
-\end_layout
-
-\end_inset
-
-
+-
 \end_layout
 
 \begin_layout Standard
@@ -7431,138 +7113,11 @@ Margini di stabilità
 \end_layout
 
 \begin_layout Chapter
-Appello del 26.02.13
+Appello del 26.02.13 [i]
 \end_layout
 
 \begin_layout Subsection*
 Quesito A
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-Si consideri un sistema in retroazione unitaria con 
-\begin_inset Formula $G_{p}(s)=2.5\frac{s-2}{s+10}=-\frac{{1}}{2}\frac{{1-0.5s}}{1+0.1s}=-0.5\frac{{1-0.5s}}{1+0.1s},G_{c}(s)=1$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Subsubsection*
-
-\emph on
-Supponendo che agiscano i segnali 
-\begin_inset Formula $u(t)=1(t)$
-\end_inset
-
- e 
-\begin_inset Formula $d(t)=\sin(t+\frac{{\pi}}{4})$
-\end_inset
-
- (disturbo di carico), si determini, se ha senso, l'espressione dell'uscita
- a regime
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-
-\emph on
-NOTA: 
-\begin_inset Formula $|G_{0}(\jo)|=\left|\frac{{1}}{1+\frac{{1}}{\rg}}\right|\Rightarrow\frac{{1}}{|1+k|}$
-\end_inset
-
-a basse frequenze (
-\begin_inset Formula $\mu=0$
-\end_inset
-
-).
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $G_{0}(\jo)=-\frac{{1-0.5\jo}}{1+0.7\jo}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\lim_{s\rightarrow0}-\frac{{1-0.5s}}{1+0.7s}=-1$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\mathfrak{S}(\jo)=0.5\frac{{1+0.1\jo}}{1+0.7\jo}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\mathfrak{|S}(j)|=0.5\frac{{\sqrt{1+0.01\omega^{2}}}}{\sqrt{1+0.49\omega^{2}}}=0.41$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\angle\mathfrak{S}(j)=\arctan(0.1\omega)-\arctan(0.7\omega)=-0.51$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-L'uscita a regime è pertanto:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $y(t)=y_{u}(t)+y_{d}(t)=0.41\sin(t+\frac{{\pi}}{4}-0.51)-1$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection*
-
-\emph on
-Supponendo che agisca solo il disturbo 
-\begin_inset Formula $d(t)=2\cdot\sin(\omega t)$
-\end_inset
-
-, con 
-\begin_inset Formula $\omega\in[0,10]$
-\end_inset
-
-, si determini il valore massimo che può assumere l'uscita a regime.
-\end_layout
-
-\begin_layout Standard
-Il picco della funzione sensitività nell'intervallo 
-\begin_inset Formula $\omega\in[0,10]$
-\end_inset
-
- si ha per 
-\begin_inset Formula $\omega=0$
-\end_inset
-
- e vale 
-\begin_inset Formula $\mathfrak{|S}(0)|=0.5$
-\end_inset
-
-.
- Il valore massimo che può assumere l'uscita a regime è pertanto 
-\begin_inset Formula $1$
-\end_inset
-
-.
 \end_layout
 
 \begin_layout Subsection*
@@ -7745,72 +7300,6 @@ Diagramma!di Nyquist
 
 \end_layout
 
-\begin_layout Subsubsection*
-Posto 
-\begin_inset Formula $G_{c}(s)=k$
-\end_inset
-
-, utilizzando esclusivamente il criterio di Nyquist, si studi la stabilità
- del sistema al variare di K nell'intervallo 
-\begin_inset Formula $(-\infty,+\infty)$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Itemize
-Per 
-\begin_inset Formula $k>0$
-\end_inset
-
- il diagramma compie un giro in senso orario attorno al punto critico 
-\begin_inset Formula $-1+j0$
-\end_inset
-
-.
- Il sistema è instabile con 2 poli a parte reale positiva
-\end_layout
-
-\begin_layout Itemize
-Per 
-\begin_inset Formula $-10<k<0$
-\end_inset
-
- il diagramma compie due giri in senso orario attorno al punto critico 
-\begin_inset Formula $-1+j0$
-\end_inset
-
-.
- Il sistema è instabile con 3 poli a parte reale positiva.
-\end_layout
-
-\begin_layout Itemize
-Per 
-\begin_inset Formula $k<-10$
-\end_inset
-
- il diagramma compie un giro in senso orario e un in senso antiorario attorno
- al punto critico; il sistema è instabile con un polo a parte reale positiva.
-\end_layout
-
-\begin_layout Itemize
-Per 
-\begin_inset Formula $k=10$
-\end_inset
-
- il sistema è instabile.
-\end_layout
-
-\begin_layout Subsubsection*
-Se ha senso si specifichi il valore di K per cui la risposta all'impulso
- del sistema è oscillatoria permanente, specificando la pulsazione di oscillazio
-ne.
-\end_layout
-
-\begin_layout Standard
-Non è mai oscillatoria permanente.
-\end_layout
-
 \begin_layout Subsection*
 Quesito C
 \end_layout
@@ -7863,91 +7352,9 @@ L'equazione caratteristica del sistema in anello aperto è:
 .
 \end_layout
 
-\begin_layout Subsubsection*
-
-\emph on
-Nell'ipotesi di adottare il regolatore scelto al punto precedente si calcolino
- gli errori di posizione, velocità, accelerazione a regime.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\lim_{s\rightarrow0}s\cdot E_{p}(s)=\left(1+5\frac{{s}}{s^{2}+6s+18}\right)=1$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\lim_{s\rightarrow0}s\cdot E_{v}(s)=\left(\frac{{1}}{s}+\frac{5}{s^{2}+6s+18}\right)=+\infty$
-\end_inset
-
- (il sistema è di tipo 0).
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\lim_{s\rightarrow0}s\cdot E_{a}(s)=\left(\frac{{1}}{s^{2}}+\frac{{1}}{s}\frac{5}{s^{2}+6s+18}\right)=+\infty$
-\end_inset
-
-(il sistema è di tipo 0).
-\end_layout
-
-\begin_layout Subsubsection*
-
-\emph on
-Nell'ipotesi di adottare il regolatore scelto al punto precedente, si tracci
- l'andamento qualitativo dell'uscita (unitamente agli ingressi) supponendo
- di applicare separatamente un gradino unitario e una rampa unitaria al
- sistema in anello chiuso.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $Y_{s}(s)=-\frac{{5}}{s^{2}+6s+18}=-\frac{{5}}{(s+3)^{2}+9}$
-\end_inset
-
-.
-\begin_inset Formula $\mathfrak{L^{-1}}\left\{ -\frac{5}{3}\cdot\frac{{3}}{(s+3)^{2}+3^{2}}\right\} =-\frac{{5}}{3}e^{-3t}\cos(3t)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $Y_{r}(s)=-\frac{{1}}{s}\frac{{5}}{s^{2}+6s+18}=-\frac{{5}}{18}\cdot\frac{{1}}{s}+\frac{5}{54}\frac{{3s}}{(s+3)^{2}+3^{2}}+\frac{{5}}{9}\frac{{3}}{(s+3)^{2}+3^{2}}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\mathfrak{L^{-1}}\left\{ -\frac{{5}}{18}\cdot\frac{{1}}{s}+\frac{5}{54}\frac{{3s}}{(s+3)^{2}+3^{2}}+\frac{{5}}{9}\frac{{3}}{(s+3)^{2}+3^{2}}\right\} =-\frac{{5}}{18}1(t)+\frac{{5}}{54}e^{-3t}\sin(3t)+\frac{{5}}{9}e^{-3t}\cos(3t)$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename Immagini/26.02.13_C2.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename Immagini/26.02.13_C1.png
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Taratura!analitica
@@ -7959,15 +7366,6 @@ Taratura!analitica
 \end_layout
 
 \begin_layout Standard
-\begin_inset Index idx
-status collapsed
-
-\begin_layout Plain Layout
-Errori a regime
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
